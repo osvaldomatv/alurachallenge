@@ -1,6 +1,9 @@
 
 body{ 
     font-family: 'Comic Neue';
+    
+}
+main{
     background-image: url("imagenes/background.jpg");
     background-size: cover;
 }
@@ -33,9 +36,11 @@ body{
     text-align: center;
 }
 
-.texto ::placeholder{
-    color: rgb(60, 161, 129);
-   
+textarea::placeholder{
+    color: #6c6969;
+    text-align: center;
+    text-decoration-color: #6c6969;
+    font-family: 'Comic Neue';
 }
 
 .texto:focus,
@@ -60,7 +65,7 @@ body{
     font-style: normal;
     font-size: 12px;
     line-height: 150%;
-    color: #efeff2;
+    color: #ececf4;
     opacity: 0.8;
     flex:none;
     order: 1 ;
@@ -162,7 +167,7 @@ body{
     font-size: 16px;
     line-height: 150%;
     text-align: center;
-    color: #6c6969;
+    color: #2149c2;
 
 }
 
@@ -199,12 +204,20 @@ body{
     
 }
 
+
+footer{
+    text-align: center;
+    background: linear-gradient(#1b2547,#888888);
+    padding: 40px;
+}
+
 /* diseño responsivo*/
 
 @media (max-width: 57.5em){
     .container{
         display: flex;
         flex-direction: row;
+        height: 120vh;
     }
     .encriptar{
         width: 100%;
@@ -212,7 +225,7 @@ body{
 
     .texto{
         width: 80%;
-        height: 60%;
+        height: 40%;
         left: 10%;
         top: 5%
     }
@@ -220,7 +233,8 @@ body{
     .terminos{
         width: 80%;
         left: 10%;
-        top: 67%;
+        top: 48%;
+        text-align: justify;
     }
 
     .terminos p{
@@ -229,7 +243,7 @@ body{
     .botones{
         width: 80%;
         left: 10%;
-        top: 70%;
+        top: 55%;
     }
     .btnEncriptar,
     .btnDesncriptar{
@@ -247,7 +261,8 @@ body{
         width: 80%;
         height: 27%;
         left: 10%;
-        top: 80%;
+        top: 60%;
+        margin-top: 10%;
 
     }
 
@@ -260,5 +275,12 @@ body{
         top: 0;
         display: none;
         visibility: hidden;
+    }
+
+    footer{
+        text-align: center;
+        background: linear-gradient(#1b2547,#888888);
+        padding: 20px;
+
     }
 }
