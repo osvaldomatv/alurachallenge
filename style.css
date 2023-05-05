@@ -1,0 +1,257 @@
+
+body{ 
+    font-family: 'Comic Neue';
+}
+
+
+
+.container{
+    font-family: 'Comic Neue';
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #f3f5fc;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: #f3f5fc;
+}
+
+.texto ::placeholder{
+    color: rgb(0, 90, 234);
+   
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos p{
+    font-style: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #6c6969;
+    opacity: 0.8;
+    flex:none;
+    order: 1 ;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top:82%
+}
+
+.btnEncriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background-color: rgb(3, 158, 150);
+    border-radius: 24px;
+    font-family: 'Comic Neue';
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    border: none;
+    color: #f3f5fc;
+}
+.btnDesncriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-content: flex-start;
+    justify-content: center;
+    font-family: 'Comic Neue';
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background-color:rgb(4, 197, 187) ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+}
+
+.btnEncriptar:hover,
+.btnDesncriptar:hover{
+    margin: 0.5%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
+    border-radius: 32px;
+}
+
+.mensajeEncriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+}
+
+.titulo-mensaje{
+    width: 60%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(3, 88, 124);
+}
+
+.mensajeEncriptado p{
+    width: 80%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #6c6969;
+
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;   
+}
+
+.copiar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+    font-family: 'Comic Neue';
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
+    background-color:rgb(4, 197, 187) ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 24px;
+    border: none;
+}
+.copiar:hover{
+    
+        margin: 0.5%;
+        width: 24.5%;
+        padding: 1.8%;
+    
+}
+
+/* diseño responsivo*/
+
+@media (max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .encriptar{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%
+    }
+
+    .terminos{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+
+    .terminos p{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btnEncriptar,
+    .btnDesncriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    
+    .btnEncriptar:hover,
+    .btnDesncriptar:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .encriptado{
+        width: 80%;
+        height: 27%;
+        left: 10%;
+        top: 80%;
+    }
+
+    .mensajeEncriptado{
+        width: 100%;
+        top: 5%;
+    }
+
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+}
