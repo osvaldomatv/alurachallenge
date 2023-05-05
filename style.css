@@ -147,7 +147,7 @@ textarea::placeholder{
     gap: 16px;
     position: absolute;
     width: 100%;
-    top: 65%;
+    top: 15%;
 }
 
 .titulo-mensaje{
@@ -172,7 +172,7 @@ textarea::placeholder{
 }
 
 .encriptado img{
-    position: absolute;
+    position: flex;
     width: 80%;
     height: 50%;
     top: 15%;   
