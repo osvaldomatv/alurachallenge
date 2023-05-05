@@ -5,7 +5,8 @@ body{
     background-size: cover;
 }
 .logo{
-    margin: 20px 20px 0;
+    position: relative;
+    margin: 35px 35px 0 35px;
 }
 
 .container{
@@ -18,19 +19,17 @@ body{
 
 .texto{
     position: absolute;
-    padding: .8%;
-    font-family: 'Comic Neue';
     width: 42%;
     height: 60%;
     left: 12%;
-    top: 15%;
+    top: 5%;
     border: none;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     border-radius: 24px;
-    background-color: #9dace1;
+    background-color: #50bdf4;
 }
 
 .texto ::placeholder{
@@ -53,14 +52,14 @@ body{
     position: absolute;
     width: 80%;
     left: 12%;
-    top: 80%;
+    top: 68%;
 }
 
 .terminos p{
     font-style: normal;
     font-size: 12px;
     line-height: 150%;
-    color: #bdb8b8;
+    color: #efeff2;
     opacity: 0.8;
     flex:none;
     order: 1 ;
@@ -75,7 +74,7 @@ body{
     position: absolute;
     width: 80%;
     left: 12%;
-    top:82%
+    top:72%
 }
 
 .btnEncriptar{
@@ -127,8 +126,8 @@ body{
     width: 30%;
     height: 90%;
     left: 60%;
-    top: 5%;
-    background: white;
+    top: -10%;
+    background: #50bdf4;
     box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.8);
     border-radius: 32px;
 }
@@ -214,7 +213,7 @@ body{
         width: 80%;
         height: 60%;
         left: 10%;
-        top: 15%
+        top: 5%
     }
 
     .terminos{
@@ -239,7 +238,7 @@ body{
     
     .btnEncriptar:hover,
     .btnDesncriptar:hover{
-        margin: 0.8%;
+        margin: 0.3%;
         width: 47.5%;
         padding: 1.8%;
     }
@@ -248,6 +247,7 @@ body{
         height: 27%;
         left: 10%;
         top: 80%;
+
     }
 
     .mensajeEncriptado{
