@@ -144,7 +144,7 @@ textarea::placeholder{
     align-items: center;
     justify-content: center;
     padding: 1%;
-    gap: 16px;
+    gap: 26px;
     position: absolute;
     width: 100%;
     top: 15%;
@@ -161,11 +161,12 @@ textarea::placeholder{
 }
 
 .mensajeEncriptado p{
-    width: 80%;
+    width: 85%;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    word-break: break-all;
     text-align: center;
     color: #2149c2;
 
@@ -198,9 +199,7 @@ textarea::placeholder{
 }
 .copiar:hover{
     
-        margin: 0.5%;
-        width: 24.5%;
-        padding: 1.8%;
+     background-color: #567843;
     
 }
 
